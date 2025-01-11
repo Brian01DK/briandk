@@ -250,120 +250,188 @@ footer {
 @media (max-width: 768px) {
     /* Header */
     nav {
-        padding: 0.75rem 1rem;
+        padding: 1rem;
+        background: rgba(17, 17, 17, 0.98);
     }
     
     .logo {
-        font-size: 1.25rem;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    .nav-controls {
+        gap: 0.75rem;
     }
     
     /* Main Content */
     main {
-        padding: 4rem 1rem 1rem;
+        padding: 5rem 1.25rem 2rem;
     }
     
     .hero {
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
+        padding: 2rem 0;
     }
     
     .hero h1 {
-        font-size: 1.75rem;
-        padding: 0 1rem;
-        margin-bottom: 0.5rem;
+        font-size: 2rem;
+        line-height: 1.3;
+        padding: 0;
+        margin-bottom: 1rem;
     }
     
     .hero p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        padding: 0;
+        margin-bottom: 1.5rem;
+        max-width: 100%;
+    }
+
+    .hero button {
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 0.9rem;
         font-size: 1rem;
-        padding: 0 1rem;
+        font-weight: 600;
     }
     
     /* Stats */
     .stats {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.75rem;
-        padding: 0 0.5rem;
-        margin-bottom: 2rem;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        padding: 0;
+        margin: 0 0 2.5rem 0;
     }
     
     .stats > div {
-        min-width: unset;
-        width: 100%;
-        padding: 0.75rem;
+        padding: 1.25rem 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
     }
     
     .number {
-        font-size: 1.75rem;
-        margin-bottom: 0.25rem;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
     }
     
     .label {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
+        line-height: 1.4;
     }
     
     /* Services */
     .services {
-        gap: 1rem;
+        gap: 1.25rem;
     }
     
     .service {
-        padding: 1.25rem;
-    }
-    
-    /* Buttons */
-    button, select {
-        padding: 0.5rem 0.75rem;
-        font-size: 0.85rem;
-    }
-    
-    /* Popup */
-    .popup {
-        width: 80%;
-        max-width: 250px;
-        padding: 1rem;
-    }
-    
-    .popup a {
-        font-size: 1.25rem;
-        padding: 0.75rem 1.5rem;
+        padding: 1.5rem;
+        text-align: center;
     }
 
+    .service h2 {
+        font-size: 1.4rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .service p {
+        font-size: 1rem;
+        margin-bottom: 1.25rem;
+        line-height: 1.5;
+    }
+
+    .service button {
+        width: 100%;
+        padding: 0.9rem;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    
+    /* Subscribe Section */
     .subscribe {
-        padding: 2rem 1rem;
-        margin-top: 2rem;
+        padding: 2.5rem 1.25rem;
+        margin-top: 2.5rem;
     }
 
     .subscribe h2 {
-        font-size: 1.75rem;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
     }
 
     .subscribe p {
         font-size: 1rem;
+        line-height: 1.5;
         margin-bottom: 1.5rem;
+        padding: 0 0.5rem;
     }
 
     .subscribe-form {
         flex-direction: column;
-        padding: 0 1rem;
+        gap: 1rem;
+        padding: 0;
+    }
+
+    .subscribe-form input {
+        width: 100%;
+        padding: 0.9rem;
+        font-size: 1rem;
     }
 
     .subscribe-form button {
         width: 100%;
+        padding: 0.9rem;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    /* Popup */
+    .popup {
+        width: 90%;
+        max-width: 300px;
+        padding: 1.5rem;
+    }
+    
+    .popup a {
+        font-size: 1.4rem;
+        padding: 1rem;
+        font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+        padding: 2rem 1rem;
+        font-size: 0.9rem;
     }
 }
 
-/* Small Mobile Styles */
+/* Extra Small Mobile Styles */
 @media (max-width: 375px) {
     .hero h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     
     .stats {
         grid-template-columns: 1fr;
     }
+
+    .stats > div {
+        padding: 1.5rem 1rem;
+    }
     
+    .number {
+        font-size: 2.2rem;
+    }
+
     .nav-controls {
         gap: 0.5rem;
+    }
+
+    .nav-controls button,
+    .nav-controls select {
+        padding: 0.75rem;
+        font-size: 0.9rem;
     }
 }
 
