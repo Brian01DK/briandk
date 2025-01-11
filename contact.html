@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - BrianDK</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">BrianDK</div>
+            <div class="nav-links">
+                <a href="services.html" data-lang="da">Services</a>
+                <a href="contact.html" class="active" data-lang="da">Kontakt</a>
+                <select id="language-selector" onchange="changeLanguage(this.value)">
+                    <option value="da">Dansk</option>
+                    <option value="en">English</option>
+                </select>
+                <a href="tel:36200759" class="contact-btn" data-lang="da">Ring nu</a>
+                <a href="tel:36200759" class="contact-btn hidden" data-lang="en">Call now</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <div class="contact-content" data-aos="fade-up">
+                <h1 data-lang="da">Lad os snakke om dit projekt</h1>
+                <h1 class="hidden" data-lang="en">Let's talk about your project</h1>
+                <p data-lang="da">Ring til mig på 36 20 07 59 for en uforpligtende snak om dine behov og ønsker</p>
+                <p class="hidden" data-lang="en">Call me at 36 20 07 59 for a non-binding chat about your needs and wishes</p>
+                <a href="tel:36200759" class="cta-button" data-lang="da">Ring nu</a>
+                <a href="tel:36200759" class="cta-button hidden" data-lang="en">Call now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="copyright">
+                <p>BrianDK © 2025 | Udviklet af Brian Fuglsang</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

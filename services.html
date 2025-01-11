@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - BrianDK</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="gradient-bg">
+        <div class="blur-circle-1"></div>
+        <div class="blur-circle-2"></div>
+        
+        <header class="glass-nav">
+            <nav>
+                <a href="index.html" class="logo">
+                    <span class="gradient-text">BrianDK</span>
+                </a>
+                <div class="nav-links">
+                    <a href="services.html">Services</a>
+                    <select id="language-selector" class="glass-select" onchange="changeLanguage(this.value)">
+                        <option value="da">Dansk</option>
+                        <option value="en">English</option>
+                    </select>
+                    <button onclick="showPhone()" class="glass-button">
+                        <span data-lang="da">Ring nu</span>
+                        <span data-lang="en" style="display: none;">Call now</span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="service-hero glass-card" data-aos="fade-up">
+                <h1 class="gradient-text">
+                    <span data-lang="da">Professionelle Webløsninger</span>
+                    <span data-lang="en" style="display: none;">Professional Web Solutions</span>
+                </h1>
+                <p class="hero-text">
+                    <span data-lang="da">Skræddersyede digitale løsninger til din virksomhed</span>
+                    <span data-lang="en" style="display: none;">Tailored digital solutions for your business</span>
+                </p>
+            </section>
+
+            <section class="services-grid">
+                <div class="service-card glass-card" data-aos="fade-up">
+                    <h2>
+                        <span data-lang="da">Webudvikling</span>
+                        <span data-lang="en" style="display: none;">Web Development</span>
+                    </h2>
+                    <ul>
+                        <li data-lang="da">Fuldt responsive på alle enheder</li>
+                        <li data-lang="da">Optimeret for hurtig indlæsning</li>
+                        <li data-lang="da">Brugervenlige og intuitive</li>
+                        <li data-lang="da">SEO-optimerede fra starten</li>
+                        <li data-lang="en" style="display: none;">Fully responsive on all devices</li>
+                        <li data-lang="en" style="display: none;">Optimized for fast loading</li>
+                        <li data-lang="en" style="display: none;">User-friendly and intuitive</li>
+                        <li data-lang="en" style="display: none;">SEO-optimized from the start</li>
+                    </ul>
+                    <button onclick="showPhone()" class="service-cta">
+                        <span data-lang="da">Få et tilbud</span>
+                        <span data-lang="en" style="display: none;">Get a quote</span>
+                    </button>
+                </div>
+
+                <div class="service-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <h2>
+                        <span data-lang="da">Analytics & Rapportering</span>
+                        <span data-lang="en" style="display: none;">Analytics & Reporting</span>
+                    </h2>
+                    <ul>
+                        <li data-lang="da">Detaljeret besøgsstatistik</li>
+                        <li data-lang="da">Brugeradfærdsanalyse</li>
+                        <li data-lang="da">Konverteringsoptimering</li>
+                        <li data-lang="da">Månedlige rapporter</li>
+                        <li data-lang="en" style="display: none;">Detailed visitor statistics</li>
+                        <li data-lang="en" style="display: none;">User behavior analysis</li>
+                        <li data-lang="en" style="display: none;">Conversion optimization</li>
+                        <li data-lang="en" style="display: none;">Monthly reports</li>
+                    </ul>
+                    <button onclick="showPhone()" class="service-cta">
+                        <span data-lang="da">Få et tilbud</span>
+                        <span data-lang="en" style="display: none;">Get a quote</span>
+                    </button>
+                </div>
+
+                <div class="service-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <h2>
+                        <span data-lang="da">Support & Vedligeholdelse</span>
+                        <span data-lang="en" style="display: none;">Support & Maintenance</span>
+                    </h2>
+                    <ul>
+                        <li data-lang="da">Hurtig responstid</li>
+                        <li data-lang="da">Regelmæssige opdateringer</li>
+                        <li data-lang="da">Sikkerhedsopdateringer</li>
+                        <li data-lang="da">Backup-løsninger</li>
+                        <li data-lang="en" style="display: none;">Quick response time</li>
+                        <li data-lang="en" style="display: none;">Regular updates</li>
+                        <li data-lang="en" style="display: none;">Security updates</li>
+                        <li data-lang="en" style="display: none;">Backup solutions</li>
+                    </ul>
+                    <button onclick="showPhone()" class="service-cta">
+                        <span data-lang="da">Få et tilbud</span>
+                        <span data-lang="en" style="display: none;">Get a quote</span>
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Phone Popup -->
+        <div id="phone-popup" class="phone-popup hidden">
+            <p>
+                <span data-lang="da">Ring til mig på:</span>
+                <span data-lang="en" style="display: none;">Call me at:</span>
+            </p>
+            <a href="tel:36200759" class="phone-number">36 20 07 59</a>
+        </div>
+
+        <footer class="glass-card">
+            <div class="footer-content">
+                <p>BrianDK © 2025 | Udviklet af Brian Fuglsang</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
